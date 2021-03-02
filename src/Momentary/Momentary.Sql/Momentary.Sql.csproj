@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Title>Momentary</Title>
+        <Authors>Dan Nielsen</Authors>
+        <Description>Transient database tooling.</Description>
+        <Copyright>2021</Copyright>
+        <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/danielsen/Momentary</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>data databases SQL Testing</PackageTags>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+</Project>

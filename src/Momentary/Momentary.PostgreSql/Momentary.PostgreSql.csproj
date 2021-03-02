@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Title>Momentary</Title>
+        <Authors>Dan Nielsen</Authors>
+        <Description>Transient database tooling.</Description>
+        <Copyright>2021</Copyright>
+        <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/danielsen/Momentary</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>data databases PostgreSQL Testing</PackageTags>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Momentary\Momentary.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql" Version="5.0.3" />
+    </ItemGroup>
+
+</Project>
