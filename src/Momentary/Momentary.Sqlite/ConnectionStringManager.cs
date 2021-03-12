@@ -1,8 +1,8 @@
 using System;
+using System.Data.SQLite;
 using Momentary.Common;
-using Npgsql;
 
-namespace Momentary.PostgreSql
+namespace Momentary.Sqlite
 {
     internal class ConnectionStringManager : IConnectionStringManager
     {
@@ -13,11 +13,12 @@ namespace Momentary.PostgreSql
 
             if (string.IsNullOrEmpty(transientDatabaseName) || string.IsNullOrWhiteSpace(transientDatabaseName))
                 throw new ArgumentException($"{nameof(transientDatabaseName)} cannot be null or empty.");
-            
-            var connectionStringBuilder = new NpgsqlConnectionStringBuilder(defaultConnectionString)
+
+            var connectionStringBuilder = new SQLiteConnectionStringBuilder(defaultConnectionString)
             {
-                Database = transientDatabaseName
+                DataSource = transientDatabaseName
             };
+
             DefaultConnectionString = defaultConnectionString;
             TransientConnectionString = connectionStringBuilder.ToString();
             TransientDatabaseName = transientDatabaseName;

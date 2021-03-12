@@ -42,4 +42,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore src/Momentary
 
     - name: Test
-      run: dotnet test src/Momentary
+      run: dotnet test --filter FullyQualifiedName\!~Integration src/Momentary 

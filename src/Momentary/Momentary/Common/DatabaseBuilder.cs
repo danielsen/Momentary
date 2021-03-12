@@ -84,20 +84,21 @@ namespace Momentary.Common
 
         protected DatabaseConfigurationSummary GetConfigurationSummary()
         {
-            return new DatabaseConfigurationSummary
+            var summary = new DatabaseConfigurationSummary
             {
                 ConnectionString = _connectionString,
-                ConnectionStringManagerType = _connectionStringManager.GetType().ToString(),
+                ConnectionStringManagerType = _connectionStringManager?.GetType().ToString(),
                 ConnectionStringName = _connectionStringName,
-                DatabaseNameGeneratorType = _databaseNameGenerator.GetType().ToString(),
-                DatabaseType = _database.GetType().ToString(),
+                DatabaseNameGeneratorType = _databaseNameGenerator?.GetType().ToString(),
+                DatabaseType = _database?.GetType().ToString(),
                 ScriptDirectory = _scriptDirectory,
-                SessionType = _session.GetType().ToString(),
+                SessionType = _session?.GetType().ToString(),
                 TransientConnectionString = _connectionStringManager?.TransientConnectionString,
                 UsesConfiguration = _configuration != null,
                 UsesConnectionString = _configuration == null,
                 UsesScriptDirectory = _scriptDirectory != null
             };
+            return summary;
         }
 
         public IDatabase Build()

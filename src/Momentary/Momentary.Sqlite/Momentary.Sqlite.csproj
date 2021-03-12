@@ -11,8 +11,17 @@
         <RepositoryUrl>https://github.com/danielsen/Momentary</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>data databases Sqlite Testing</PackageTags>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.0.0</FileVersion>       
+        <AssemblyVersion>1.1.0</AssemblyVersion>
+        <FileVersion>1.1.0</FileVersion>
+        <PackageVersion>1.1.0</PackageVersion>       
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Momentary\Momentary.csproj" />
+    </ItemGroup>
 
 </Project>

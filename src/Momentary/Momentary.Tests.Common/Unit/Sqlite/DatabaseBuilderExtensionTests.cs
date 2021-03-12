@@ -1,8 +1,8 @@
-using Momentary.PostgreSql;
+using Momentary.Sqlite;
 using Momentary.Tests.Common.Common.Data.Fakes;
 using NUnit.Framework;
 
-namespace Momentary.Tests.Common.Unit.PostgreSql
+namespace Momentary.Tests.Common.Unit.Sqlite
 {
     [TestFixture]
     public class DatabaseBuilderExtensionTests
@@ -20,7 +20,7 @@ namespace Momentary.Tests.Common.Unit.PostgreSql
         {
             _builder = null;
         }
-        
+
         [Test]
         public void should_have_correct_vendor()
         {

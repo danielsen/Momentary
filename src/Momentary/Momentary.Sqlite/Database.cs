@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Momentary.Common;
+
+namespace Momentary.Sqlite
+{
+    internal class Database : IDatabase
+    {
+        private IConnectionStringManager _connectionStringManager;
+        private ISession _session;
+
+        public void ConfigureAndBuild(IConnectionStringManager connectionStringManager,
+            IDictionary<string, object> properties, ISession session)
+        {
+            _connectionStringManager = connectionStringManager;
+            _session = session;
+        }
+
+        public void Drop()
+        {
+            if (Exists())
+            {
+                File.Delete(_connectionStringManager.TransientDatabaseName);
+            }
+        }
+
+        public bool Exists()
+        {
+            return File.Exists(_connectionStringManager.TransientDatabaseName);
+        }
+
+        public void RunScripts(string directory)
+        {
+            if (!Directory.Exists(directory))
+                throw new ArgumentException($"Directory does not exist: {directory}");
+
+            Directory.GetFiles(directory).OrderBy(s => s).Select(File.ReadAllText).ToList()
+                .ForEach(command => _session.Execute(_connectionStringManager.TransientConnectionString, command));
+        }
+    }
+}

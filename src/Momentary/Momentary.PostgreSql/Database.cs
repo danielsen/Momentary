@@ -34,7 +34,7 @@ namespace Momentary.PostgreSql
         {
             _connectionStringManager = connectionStringManager;
             
-            if (properties.ContainsKey("TemplateDatabase"))
+            if (properties != null && properties.ContainsKey("TemplateDatabase"))
                 TemplateDatabase = (string) properties["TemplateDatabase"];
 
             _session = session;
