@@ -20,6 +20,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Momentary.PostgreSql\Momentary.PostgreSql.csproj" />
       <ProjectReference Include="..\Momentary.Sqlite\Momentary.Sqlite.csproj" />
+      <ProjectReference Include="..\Momentary.Sql\Momentary.Sql.csproj" />
       <ProjectReference Include="..\Momentary\Momentary.csproj" />
     </ItemGroup>
 
