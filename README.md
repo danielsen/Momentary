@@ -5,10 +5,11 @@
 
 ### Current Version
 
-- 1.2.0
+- 1.3.0
 
 ### Database Engine Support
 
 - PostgreSQL 
 - SQLite
 - Microsoft SQL Server
+- MySQL and derivatives, e.g. MariaDB

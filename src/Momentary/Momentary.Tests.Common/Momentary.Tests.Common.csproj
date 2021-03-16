@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Momentary.MySql\Momentary.MySql.csproj" />
       <ProjectReference Include="..\Momentary.PostgreSql\Momentary.PostgreSql.csproj" />
       <ProjectReference Include="..\Momentary.Sqlite\Momentary.Sqlite.csproj" />
       <ProjectReference Include="..\Momentary.Sql\Momentary.Sql.csproj" />

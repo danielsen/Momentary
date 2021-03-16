@@ -2,26 +2,25 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Title>Momentary.Sql</Title>
+        <Title>Momentary.MySql</Title>
         <Authors>Dan Nielsen</Authors>
-        <Description>Transient database tooling for Microsoft SQL server.</Description>
+        <Description>Transient database tooling for MySQL and derivatives.</Description>
         <Copyright>2021</Copyright>
         <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/danielsen/Momentary</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>data databases SQL Testing</PackageTags>
-        <AssemblyVersion>1.1.1</AssemblyVersion>
-        <FileVersion>1.1.1</FileVersion>
-        <PackageVersion>1.1.0</PackageVersion>
+        <PackageTags>data databases MariaDB MySQL Testing</PackageTags>       
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1..0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Momentary\Momentary.csproj" />
+      <PackageReference Include="MySqlConnector" Version="1.3.1" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+      <ProjectReference Include="..\Momentary\Momentary.csproj" />
     </ItemGroup>
 
 </Project>

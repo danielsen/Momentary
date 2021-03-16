@@ -2,9 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Title>Momentary</Title>
+        <Title>Momentary.Sqlite</Title>
         <Authors>Dan Nielsen</Authors>
-        <Description>Transient database tooling.</Description>
+        <Description>Transient database tooling for SQLite.</Description>
         <Copyright>2021</Copyright>
         <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>

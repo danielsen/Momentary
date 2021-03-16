@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Title>Momentary</Title>
+        <Title>Momentary.PostgreSql</Title>
         <Authors>Dan Nielsen</Authors>
-        <Description>Transient database tooling.</Description>
+        <Description>Transient database tooling for PostgreSql.</Description>
         <Copyright>2021</Copyright>
         <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>
