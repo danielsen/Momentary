@@ -164,6 +164,8 @@ namespace Momentary.Common
 
             return this;
         }
+
+        public string TransientConnectionString => _connectionStringManager.TransientConnectionString;
     }
     
     #region DatabaseConfigurationSummary
