@@ -25,7 +25,7 @@ namespace Momentary.Tests.Common.Unit.Sqlite
         public void should_have_correct_vendor()
         {
             _builder = new UnitTestDatabaseBuilder();
-            _builder.ForVendor(new ConnectionStringManager(), new Database(), new Session());
+            _builder.ForSqlite();
 
             var summary = _builder.ConfigurationSummary;
             Assert.AreEqual(summary.ConnectionStringManagerType, typeof(ConnectionStringManager).ToString());
