@@ -7,7 +7,7 @@
         <Description>Transient database tooling.</Description>
         <Copyright>2021</Copyright>
         <PackageProjectUrl>https://github.com/danielsen/Momentary</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/danielsen/Momentary/LICENSE</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/danielsen/Momentary</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>data databases MariaDB MySQL PostgreSQL SQL Sqlite Testing</PackageTags>
